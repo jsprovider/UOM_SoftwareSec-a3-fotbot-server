@@ -1,0 +1,276 @@
+PS C:\Jagath\CybersecMsc\OT5_Software_Security\Assignment3\A3_Repo> python --version
+Python 3.15.0
+PS C:\Jagath\CybersecMsc\OT5_Software_Security\Assignment3\A3_Repo> python3 -m unittest -v test_fotbot.py
+2026-10-12 18:22:10,100 INFO Seeded admin account
+2026-10-12 18:22:10,102 INFO Seeded admin account
+2026-10-12 18:22:10,103 INFO FotBot server listening on 127.0.0.1:8559
+FotBot server listening on 127.0.0.1:8559
+Connect with: telnet 127.0.0.1 8559
+test_brute_force_lockout (test_fotbot.TestAuthentication.test_brute_force_lockout) ... 2026-10-12 18:22:10,629 INFO Seeded admin account
+2026-10-12 18:22:10,630 INFO Connected: 127.0.0.1:58420
+2026-10-12 18:22:10,643 INFO Registered new user alice
+2026-10-12 18:22:10,644 INFO Connected: 127.0.0.1:58421
+2026-10-12 18:22:10,657 INFO Login failure for selected user
+2026-10-12 18:22:10,672 INFO Login failure for selected user
+2026-10-12 18:22:10,686 INFO Login failure for selected user
+2026-10-12 18:22:10,700 INFO Login failure for selected user
+2026-10-12 18:22:10,717 WARNING Account alice locked after repeated failures
+2026-10-12 18:22:10,717 INFO Login failure for selected user
+ok
+test_duplicate_registration_rejected (test_fotbot.TestAuthentication.test_duplicate_registration_rejected) ... 2026-10-12 18:22:10,718 INFO Closed: 127.0.0.1:58420
+2026-10-12 18:22:10,719 INFO Closed: 127.0.0.1:58421
+2026-10-12 18:22:10,737 INFO Seeded admin account
+2026-10-12 18:22:10,738 INFO Connected: 127.0.0.1:58422
+2026-10-12 18:22:10,754 INFO Registered new user alice
+2026-10-12 18:22:10,755 INFO Connected: 127.0.0.1:58423
+ok
+test_no_silent_identity_switch (test_fotbot.TestAuthentication.test_no_silent_identity_switch) ... 2026-10-12 18:22:10,755 INFO Closed: 127.0.0.1:58422
+2026-10-12 18:22:10,755 INFO Closed: 127.0.0.1:58423
+2026-10-12 18:22:10,770 INFO Seeded admin account
+2026-10-12 18:22:10,771 INFO Connected: 127.0.0.1:58424
+2026-10-12 18:22:10,790 INFO Registered new user alice
+2026-10-12 18:22:10,792 INFO Connected: 127.0.0.1:58425
+2026-10-12 18:22:10,808 INFO Registered new user bob
+2026-10-12 18:22:10,810 INFO Connected: 127.0.0.1:58426
+2026-10-12 18:22:10,823 INFO Login success for alice
+ok
+test_pass_without_user_rejected (test_fotbot.TestAuthentication.test_pass_without_user_rejected) ... 2026-10-12 18:22:10,825 INFO Closed: 127.0.0.1:58426
+2026-10-12 18:22:10,825 INFO Closed: 127.0.0.1:58424
+2026-10-12 18:22:10,825 INFO Closed: 127.0.0.1:58425
+2026-10-12 18:22:10,839 INFO Seeded admin account
+2026-10-12 18:22:10,840 INFO Connected: 127.0.0.1:58427
+ok
+2026-10-12 18:22:10,840 INFO Closed: 127.0.0.1:58427
+test_user_enumeration_resistance (test_fotbot.TestAuthentication.test_user_enumeration_resistance) ... 2026-10-12 18:22:10,854 INFO Seeded admin account
+2026-10-12 18:22:10,855 INFO Connected: 127.0.0.1:58428
+2026-10-12 18:22:10,869 INFO Registered new user alice
+2026-10-12 18:22:10,870 INFO Connected: 127.0.0.1:58429
+2026-10-12 18:22:10,884 INFO Login failure for selected user
+2026-10-12 18:22:10,884 INFO Connected: 127.0.0.1:58430
+2026-10-12 18:22:10,885 INFO Login failure for selected user
+2026-10-12 18:22:10,885 INFO Closed: 127.0.0.1:58428
+ok
+2026-10-12 18:22:10,885 INFO Closed: 127.0.0.1:58429
+test_wrong_password_fails (test_fotbot.TestAuthentication.test_wrong_password_fails) ... 2026-10-12 18:22:10,885 INFO Closed: 127.0.0.1:58430
+2026-10-12 18:22:10,898 INFO Seeded admin account
+2026-10-12 18:22:10,899 INFO Connected: 127.0.0.1:58431
+2026-10-12 18:22:10,912 INFO Registered new user alice
+2026-10-12 18:22:10,913 INFO Connected: 127.0.0.1:58432
+2026-10-12 18:22:10,925 INFO Login failure for selected user
+ok
+test_protected_commands_require_login (test_fotbot.TestAuthorisation.test_protected_commands_require_login) ... 2026-10-12 18:22:10,926 INFO Closed: 127.0.0.1:58431
+2026-10-12 18:22:10,926 INFO Closed: 127.0.0.1:58432
+2026-10-12 18:22:10,938 INFO Seeded admin account
+2026-10-12 18:22:10,939 INFO Connected: 127.0.0.1:58433
+ok
+2026-10-12 18:22:10,940 INFO Closed: 127.0.0.1:58433
+test_unauthorised_read_denied (test_fotbot.TestAuthorisation.test_unauthorised_read_denied) ... 2026-10-12 18:22:10,952 INFO Seeded admin account
+2026-10-12 18:22:10,953 INFO Connected: 127.0.0.1:58434
+2026-10-12 18:22:10,967 INFO Registered new user alice
+2026-10-12 18:22:10,968 INFO Connected: 127.0.0.1:58435
+2026-10-12 18:22:10,982 INFO Registered new user bob
+2026-10-12 18:22:10,983 INFO Connected: 127.0.0.1:58436
+2026-10-12 18:22:10,996 INFO Login success for alice
+2026-10-12 18:22:11,026 INFO Connected: 127.0.0.1:58437
+2026-10-12 18:22:11,039 INFO Login success for bob
+ok
+2026-10-12 18:22:11,039 INFO Closed: 127.0.0.1:58435
+test_update_writes_only_own_data (test_fotbot.TestAuthorisation.test_update_writes_only_own_data) ... 2026-10-12 18:22:11,040 INFO Closed: 127.0.0.1:58436
+2026-10-12 18:22:11,040 INFO Closed: 127.0.0.1:58434
+2026-10-12 18:22:11,040 INFO Closed: 127.0.0.1:58437
+2026-10-12 18:22:11,053 INFO Seeded admin account
+2026-10-12 18:22:11,053 INFO Connected: 127.0.0.1:58438
+2026-10-12 18:22:11,066 INFO Registered new user alice
+2026-10-12 18:22:11,067 INFO Connected: 127.0.0.1:58439
+2026-10-12 18:22:11,080 INFO Registered new user bob
+2026-10-12 18:22:11,081 INFO Connected: 127.0.0.1:58440
+2026-10-12 18:22:11,094 INFO Login success for alice
+2026-10-12 18:22:11,094 INFO Connected: 127.0.0.1:58441
+2026-10-12 18:22:11,107 INFO Login success for bob
+2026-10-12 18:22:11,108 INFO Closed: 127.0.0.1:58438
+ok
+2026-10-12 18:22:11,108 INFO Closed: 127.0.0.1:58439
+test_bad_username_on_register_rejected (test_fotbot.TestInputValidation.test_bad_username_on_register_rejected) ... 2026-10-12 18:22:11,108 INFO Closed: 127.0.0.1:58440
+2026-10-12 18:22:11,108 INFO Closed: 127.0.0.1:58441
+2026-10-12 18:22:11,121 INFO Seeded admin account
+2026-10-12 18:22:11,122 INFO Connected: 127.0.0.1:58442
+2026-10-12 18:22:11,135 INFO Registered new user alice
+2026-10-12 18:22:11,136 INFO Connected: 127.0.0.1:58443
+2026-10-12 18:22:11,150 INFO Login success for alice
+2026-10-12 18:22:11,151 INFO Connected: 127.0.0.1:58444
+2026-10-12 18:22:11,151 INFO Connected: 127.0.0.1:58445
+ok
+2026-10-12 18:22:11,152 INFO Closed: 127.0.0.1:58444
+2026-10-12 18:22:11,152 INFO Closed: 127.0.0.1:58443
+test_empty_command_rejected (test_fotbot.TestInputValidation.test_empty_command_rejected) ... 2026-10-12 18:22:11,152 INFO Closed: 127.0.0.1:58442
+2026-10-12 18:22:11,152 INFO Closed: 127.0.0.1:58445
+2026-10-12 18:22:11,166 INFO Seeded admin account
+2026-10-12 18:22:11,167 INFO Connected: 127.0.0.1:58446
+2026-10-12 18:22:11,180 INFO Registered new user alice
+2026-10-12 18:22:11,181 INFO Connected: 127.0.0.1:58447
+2026-10-12 18:22:11,195 INFO Login success for alice
+ok
+2026-10-12 18:22:11,195 INFO Closed: 127.0.0.1:58447
+test_invalid_date_rejected (test_fotbot.TestInputValidation.test_invalid_date_rejected) ... 2026-10-12 18:22:11,196 INFO Closed: 127.0.0.1:58446
+2026-10-12 18:22:11,208 INFO Seeded admin account
+2026-10-12 18:22:11,209 INFO Connected: 127.0.0.1:58448
+2026-10-12 18:22:11,222 INFO Registered new user alice
+2026-10-12 18:22:11,223 INFO Connected: 127.0.0.1:58449
+2026-10-12 18:22:11,237 INFO Login success for alice
+ok
+test_missing_arguments_rejected (test_fotbot.TestInputValidation.test_missing_arguments_rejected) ... 2026-10-12 18:22:11,237 INFO Closed: 127.0.0.1:58448
+2026-10-12 18:22:11,237 INFO Closed: 127.0.0.1:58449
+2026-10-12 18:22:11,250 INFO Seeded admin account
+2026-10-12 18:22:11,251 INFO Connected: 127.0.0.1:58450
+2026-10-12 18:22:11,264 INFO Registered new user alice
+2026-10-12 18:22:11,265 INFO Connected: 127.0.0.1:58451
+2026-10-12 18:22:11,278 INFO Login success for alice
+ok
+test_negative_steps_rejected (test_fotbot.TestInputValidation.test_negative_steps_rejected) ... 2026-10-12 18:22:11,279 INFO Closed: 127.0.0.1:58450
+2026-10-12 18:22:11,279 INFO Closed: 127.0.0.1:58451
+2026-10-12 18:22:11,291 INFO Seeded admin account
+2026-10-12 18:22:11,292 INFO Connected: 127.0.0.1:58452
+2026-10-12 18:22:11,305 INFO Registered new user alice
+2026-10-12 18:22:11,305 INFO Connected: 127.0.0.1:58453
+2026-10-12 18:22:11,318 INFO Login success for alice
+ok
+test_non_numeric_steps_rejected (test_fotbot.TestInputValidation.test_non_numeric_steps_rejected) ... 2026-10-12 18:22:11,319 INFO Closed: 127.0.0.1:58452
+2026-10-12 18:22:11,319 INFO Closed: 127.0.0.1:58453
+2026-10-12 18:22:11,332 INFO Seeded admin account
+2026-10-12 18:22:11,332 INFO Connected: 127.0.0.1:58454
+2026-10-12 18:22:11,346 INFO Registered new user alice
+2026-10-12 18:22:11,347 INFO Connected: 127.0.0.1:58455
+2026-10-12 18:22:11,359 INFO Login success for alice
+ok
+2026-10-12 18:22:11,360 INFO Closed: 127.0.0.1:58454
+test_out_of_range_steps_rejected (test_fotbot.TestInputValidation.test_out_of_range_steps_rejected) ... 2026-10-12 18:22:11,360 INFO Closed: 127.0.0.1:58455
+2026-10-12 18:22:11,373 INFO Seeded admin account
+2026-10-12 18:22:11,374 INFO Connected: 127.0.0.1:58456
+2026-10-12 18:22:11,389 INFO Registered new user alice
+2026-10-12 18:22:11,389 INFO Connected: 127.0.0.1:58457
+2026-10-12 18:22:11,403 INFO Login success for alice
+ok
+2026-10-12 18:22:11,403 INFO Closed: 127.0.0.1:58457
+test_overlong_line_rejected (test_fotbot.TestInputValidation.test_overlong_line_rejected) ... 2026-10-12 18:22:11,403 INFO Closed: 127.0.0.1:58456
+2026-10-12 18:22:11,418 INFO Seeded admin account
+2026-10-12 18:22:11,419 INFO Connected: 127.0.0.1:58458
+2026-10-12 18:22:11,433 INFO Registered new user alice
+2026-10-12 18:22:11,433 INFO Connected: 127.0.0.1:58459
+2026-10-12 18:22:11,448 INFO Login success for alice
+2026-10-12 18:22:11,449 INFO Connected: 127.0.0.1:58460
+ok
+2026-10-12 18:22:11,449 INFO Closed: 127.0.0.1:58459
+test_short_password_on_register_rejected (test_fotbot.TestInputValidation.test_short_password_on_register_rejected) ... 2026-10-12 18:22:11,449 INFO Closed: 127.0.0.1:58458
+2026-10-12 18:22:11,450 INFO Closed: 127.0.0.1:58460
+2026-10-12 18:22:11,463 INFO Seeded admin account
+2026-10-12 18:22:11,463 INFO Connected: 127.0.0.1:58461
+2026-10-12 18:22:11,476 INFO Registered new user alice
+2026-10-12 18:22:11,477 INFO Connected: 127.0.0.1:58462
+2026-10-12 18:22:11,490 INFO Login success for alice
+2026-10-12 18:22:11,491 INFO Connected: 127.0.0.1:58463
+ok
+test_unknown_command_rejected (test_fotbot.TestInputValidation.test_unknown_command_rejected) ... 2026-10-12 18:22:11,492 INFO Closed: 127.0.0.1:58462
+2026-10-12 18:22:11,492 INFO Closed: 127.0.0.1:58461
+2026-10-12 18:22:11,492 INFO Closed: 127.0.0.1:58463
+2026-10-12 18:22:11,506 INFO Seeded admin account
+2026-10-12 18:22:11,507 INFO Connected: 127.0.0.1:58464
+2026-10-12 18:22:11,521 INFO Registered new user alice
+2026-10-12 18:22:11,522 INFO Connected: 127.0.0.1:58465
+2026-10-12 18:22:11,535 INFO Login success for alice
+ok
+2026-10-12 18:22:11,536 INFO Closed: 127.0.0.1:58464
+2026-10-12 18:22:11,536 INFO Closed: 127.0.0.1:58465
+test_admin_can_read_any_user (test_fotbot.TestNormalWorkflow.test_admin_can_read_any_user) ... 2026-10-12 18:22:11,550 INFO Seeded admin account
+2026-10-12 18:22:11,551 INFO Connected: 127.0.0.1:58466
+2026-10-12 18:22:11,566 INFO Registered new user alice
+2026-10-12 18:22:11,567 INFO Connected: 127.0.0.1:58467
+2026-10-12 18:22:11,580 INFO Login success for alice
+2026-10-12 18:22:11,581 INFO Connected: 127.0.0.1:58468
+2026-10-12 18:22:11,594 INFO Login success for admin
+2026-10-12 18:22:11,595 INFO Closed: 127.0.0.1:58466
+ok
+2026-10-12 18:22:11,595 INFO Closed: 127.0.0.1:58467
+test_logout_then_login_again (test_fotbot.TestNormalWorkflow.test_logout_then_login_again) ... 2026-10-12 18:22:11,595 INFO Closed: 127.0.0.1:58468
+2026-10-12 18:22:11,608 INFO Seeded admin account
+2026-10-12 18:22:11,608 INFO Connected: 127.0.0.1:58469
+2026-10-12 18:22:11,621 INFO Registered new user alice
+2026-10-12 18:22:11,622 INFO Connected: 127.0.0.1:58470
+2026-10-12 18:22:11,634 INFO Login success for alice
+2026-10-12 18:22:11,649 INFO Login success for alice
+ok
+2026-10-12 18:22:11,650 INFO Closed: 127.0.0.1:58470
+test_register_login_update_read (test_fotbot.TestNormalWorkflow.test_register_login_update_read) ... 2026-10-12 18:22:11,650 INFO Closed: 127.0.0.1:58469
+2026-10-12 18:22:11,662 INFO Seeded admin account
+2026-10-12 18:22:11,663 INFO Connected: 127.0.0.1:58471
+2026-10-12 18:22:11,676 INFO Registered new user alice
+2026-10-12 18:22:11,677 INFO Connected: 127.0.0.1:58472
+2026-10-12 18:22:11,689 INFO Login success for alice
+ok
+test_sharing_grants_read_access (test_fotbot.TestNormalWorkflow.test_sharing_grants_read_access) ... 2026-10-12 18:22:11,690 INFO Closed: 127.0.0.1:58471
+2026-10-12 18:22:11,690 INFO Closed: 127.0.0.1:58472
+2026-10-12 18:22:11,702 INFO Seeded admin account
+2026-10-12 18:22:11,703 INFO Connected: 127.0.0.1:58473
+2026-10-12 18:22:11,716 INFO Registered new user alice
+2026-10-12 18:22:11,717 INFO Connected: 127.0.0.1:58474
+2026-10-12 18:22:11,730 INFO Registered new user bob
+2026-10-12 18:22:11,730 INFO Connected: 127.0.0.1:58475
+2026-10-12 18:22:11,743 INFO Login success for alice
+2026-10-12 18:22:11,746 INFO Connected: 127.0.0.1:58476
+2026-10-12 18:22:11,764 INFO Login success for bob
+ok
+2026-10-12 18:22:11,765 INFO Closed: 127.0.0.1:58475
+test_no_stack_trace_leaked (test_fotbot.TestSafeErrors.test_no_stack_trace_leaked) ... 2026-10-12 18:22:11,765 INFO Closed: 127.0.0.1:58473
+2026-10-12 18:22:11,765 INFO Closed: 127.0.0.1:58476
+2026-10-12 18:22:11,765 INFO Closed: 127.0.0.1:58474
+2026-10-12 18:22:11,779 INFO Seeded admin account
+2026-10-12 18:22:11,780 INFO Connected: 127.0.0.1:58477
+2026-10-12 18:22:11,792 INFO Registered new user alice
+2026-10-12 18:22:11,793 INFO Connected: 127.0.0.1:58478
+2026-10-12 18:22:11,806 INFO Login success for alice
+ok
+test_commands_fail_after_logo (test_fotbot.TestSessionHandling.test_commands_fail_after_logo) ... 2026-10-12 18:22:11,806 INFO Closed: 127.0.0.1:58478
+2026-10-12 18:22:11,806 INFO Closed: 127.0.0.1:58477
+2026-10-12 18:22:11,821 INFO Seeded admin account
+2026-10-12 18:22:11,821 INFO Connected: 127.0.0.1:58479
+2026-10-12 18:22:11,835 INFO Registered new user alice
+2026-10-12 18:22:11,836 INFO Connected: 127.0.0.1:58480
+2026-10-12 18:22:11,850 INFO Login success for alice
+ok
+test_new_connection_has_no_session (test_fotbot.TestSessionHandling.test_new_connection_has_no_session) ... 2026-10-12 18:22:11,850 INFO Closed: 127.0.0.1:58479
+2026-10-12 18:22:11,851 INFO Closed: 127.0.0.1:58480
+2026-10-12 18:22:11,864 INFO Seeded admin account
+2026-10-12 18:22:11,865 INFO Connected: 127.0.0.1:58481
+2026-10-12 18:22:11,880 INFO Registered new user alice
+2026-10-12 18:22:11,881 INFO Connected: 127.0.0.1:58482
+2026-10-12 18:22:11,895 INFO Login success for alice
+2026-10-12 18:22:11,895 INFO Connected: 127.0.0.1:58483
+ok
+2026-10-12 18:22:11,896 INFO Closed: 127.0.0.1:58481
+
+----------------------------------------------------------------------
+2026-10-12 18:22:11,896 INFO Closed: 127.0.0.1:58483
+Ran 26 tests in 1.814s
+
+2026-10-12 18:22:11,896 INFO Closed: 127.0.0.1:58482
+OK
+PS C:\Jagath\CybersecMsc\OT5_Software_Security\Assignment3\A3_Repo> python3 -m unittest -v test_fotbot.py
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
